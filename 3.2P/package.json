@@ -1,0 +1,27 @@
+{
+  "name": "3.2p-recipe-box",
+  "version": "1.0.0",
+  "description": "SIT725 3.2P - Getting Graphical: Express + Materialize recipe box app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sirinarra/SIT725_s226464291.git"
+  },
+  "keywords": [
+    "Nodejs",
+    "Express",
+    "Materialize",
+    "HTML",
+    "JS",
+    "CSS"
+  ],
+  "author": "Siri (s226464291)",
+  "license": "MIT",
+  "homepage": "https://github.com/Sirinarra/SIT725_s226464291#readme",
+  "dependencies": {
+    "express": "^4.22.2"
+  }
+}
