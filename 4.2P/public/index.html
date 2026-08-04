@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SIT725 3.2P - Recipe Box</title>
+  <meta name="description" content="SIT725 3.2P Getting Graphical - Recipe Box demo app">
+  <meta name="author" content="Siri - s226464291">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Custom Style Sheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <nav>
+    <div class="nav-wrapper navbar-size">
+      <a href="#!" class="brand-logo left">
+        <img src="images/chef-hat.jpg" alt="Chef hat logo" class="user-image-size">
+        <span class="brand-text">Recipe Box</span>
+      </a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a target="_blank" href="https://github.com/Sirinarra">GitHub</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="main-body">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 center-align">
+          <h1 id="heading">The Recipe Box</h1>
+          <p class="flow-text">A small collection of go-to recipes, served up fresh from a REST API.</p>
+        </div>
+        <div class="col s12 center-align">
+          <img class="materialboxed materialboxed-image" src="images/hero.jpg">
+        </div>
+        <div class="col s12 center-align">
+          <a class="waves-effect waves-light btn click-me-button modal-trigger" id="clickMeButton"
+             data-target="modal1">
+            <i class="material-icons left">restaurant_menu</i>Add a Recipe
+          </a>
+        </div>
+      </div>
+
+      <div class="row" id="card-section">
+        <!-- Recipe cards are appended here dynamically from GET /api/recipes -->
+      </div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal modal-fixed-footer">
+      <div class="row modal-content">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="recipe_name" type="text" class="validate">
+              <label for="recipe_name">Recipe Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="cuisine" type="text" class="validate">
+              <label for="cuisine">Cuisine</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="notes" class="materialize-textarea"></textarea>
+              <label for="notes">Notes</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12 center-align">
+              <a class="waves-effect waves-light btn" id="formSubmit">Submit</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+          integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

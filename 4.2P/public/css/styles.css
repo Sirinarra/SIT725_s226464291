@@ -1,0 +1,105 @@
+.navbar-size {
+  width: 95%;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: #B33F2E;
+}
+
+nav .brand-logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+nav .brand-logo img {
+  display: block;
+  height: 40px;
+  margin-right: 10px;
+}
+
+nav .brand-text {
+  font-size: 1.5rem;
+}
+
+.main-body {
+  background-color: #EFE6D8;
+  color: #3E2723;
+  min-height: calc(100vh - 64px);
+  padding-bottom: 40px;
+}
+
+.materialboxed-image {
+  margin: 20px auto 0 auto;
+  height: 340px;
+  border: 6px solid #FFF8EC;
+  border-radius: 6px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.35);
+}
+
+.click-me-button {
+  background-color: #B33F2E;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.click-me-button:hover,
+.modal .btn:hover {
+  background-color: #8F3324 !important;
+}
+
+
+#card-section {
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #FFF8EC;
+}
+
+.card .card-content {
+  background-color: #B33F2E;
+}
+
+.card .card-title,
+.card .card-content p,
+.card .card-content i {
+  color: #FFF8EC !important;
+}
+
+.card-reveal {
+  background-color: #FFF8EC !important;
+  color: #3E2723;
+}
+
+.card-reveal .card-title,
+.card-reveal p,
+.card-reveal i {
+  color: #3E2723 !important;
+}
+
+.modal {
+  background-color: #FFF8EC;
+  color: #3E2723;
+}
+
+.modal .input-field label {
+  color: #3E2723;
+}
+
+.modal .input-field input:focus + label,
+.modal .input-field textarea:focus + label {
+  color: #B33F2E !important;
+}
+
+.modal .input-field input[type=text]:focus:not([readonly]),
+.modal .input-field textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #B33F2E !important;
+  box-shadow: 0 1px 0 0 #B33F2E !important;
+}
+
+.modal .btn {
+  background-color: #B33F2E;
+}
